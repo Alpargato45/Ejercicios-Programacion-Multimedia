@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lbl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto plano, tamaño por defecto"/>
+
+    <TextView
+        android:id="@+id/lbl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto plano, tamaño 30"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/lbl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuente Monospace"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/lbl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamaño 20, Negrita"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lbl5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamaño 20, cursiva"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/lbl6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamaño 20, negrita cursiva"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/lbl7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ff9090"/>
+    <!-- dibujo una linea para separar ejemplos -->
+
+    <TextView
+        android:id="@+id/txtBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boton"/>
+
+        <ToggleButton
+            android:id="@+id/toggleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Pulsado"
+            android:textOff="No Pulsado"/>
+
+        <ImageButton
+            android:id="@+id/imgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stop"/>
+
+        <ImageButton
+            android:id="@+id/imgBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ff9090"/>
+    <!-- dibujo una linea para separar ejemplos -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce un texto"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Introduce un texto"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ff9090"/>
+    <!-- dibujo una linea para separar ejemplos -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"/>
+
+        <ImageButton
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ff9090"/>
+    <!-- dibujo una linea para separar ejemplos -->
+
+    <AutoCompleteTextView
+        android:id="@+id/acText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige una opción"
+        android:completionThreshold="3"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ff9090"/>
+    <!-- dibujo una linea para separar ejemplos -->
+
+    <MultiAutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Elige una opción"
+        android:completionThreshold="3"/>
+
+
+</LinearLayout>

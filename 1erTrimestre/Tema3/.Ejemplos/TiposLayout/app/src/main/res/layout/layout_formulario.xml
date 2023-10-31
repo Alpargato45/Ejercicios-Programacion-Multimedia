@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow android:padding="5dp" >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Formulario"
+            android:typeface="serif"
+            android:layout_span="2"
+            android:gravity="center"
+            android:textSize="20sp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Codigo de Producto:"/>
+    <EditText
+        android:id="@+id/prod_cod"
+        android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Precio de Producto:"/>
+        <EditText
+            android:id="@+id/prod_price"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/add_button"
+            android:text="AÑADIR"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/del_button"
+            android:text="CANCELAR"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+
+
+</TableLayout>

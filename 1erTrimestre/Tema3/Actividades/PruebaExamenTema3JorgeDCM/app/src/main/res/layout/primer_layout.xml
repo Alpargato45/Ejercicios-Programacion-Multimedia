@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPadre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtcambiarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---------------------------------------Cambiar de layout---------------------------------------"
+        android:layout_above="@+id/btnLayout2"
+        android:textColor="#2873D1" />
+
+    <Button
+        android:id="@+id/btnLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layout 2"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnLayout3"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/btnLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layout 3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/textoPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplicación de Jorge"
+        android:textSize="48dp"
+        android:textAlignment="center"
+        android:textColor="#2873D1" />
+
+    <Switch
+        android:id="@+id/switchCambioFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textoPrincipal"
+        android:minHeight="48dp"
+        android:text="Pulsa para cambiar el color del fondo"
+        android:textColor="#2873D1" />
+
+</RelativeLayout>

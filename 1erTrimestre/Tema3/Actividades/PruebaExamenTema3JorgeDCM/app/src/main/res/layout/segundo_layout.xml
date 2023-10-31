@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333131"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textColor="#ffffff"
+            android:layout_marginRight="83dp"/>
+
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="140dp"
+            android:background="#ffffff"
+            android:hint=""/>
+    </GridLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha Nacimiento"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/editFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="140dp"
+            android:background="#ffffff"
+            android:hint=""
+            android:inputType="date"/>
+
+    </GridLayout>
+
+    <CheckBox
+        android:id="@+id/CheckBoxRecordatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear recordatorio"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       Aceptar       "
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textoFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+</LinearLayout>

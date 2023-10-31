@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/logoejer11"/>
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagen"
+        android:hint="Usuario"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/Clave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usuario"
+        android:hint="Clave"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textoContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Contraseña olvidada?"
+        android:layout_below="@+id/Clave"/>
+
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textoContraseña"
+        android:layout_below="@+id/Clave"
+        android:text="LOGIN" />
+
+</RelativeLayout>
