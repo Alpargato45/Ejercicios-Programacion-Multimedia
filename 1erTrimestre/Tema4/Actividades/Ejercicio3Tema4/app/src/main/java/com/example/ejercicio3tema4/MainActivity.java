@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         final Button btnTomarFoto = findViewById(R.id.btnTomarFoto);
         final Button btnMandarCorreo = findViewById(R.id.btnMandarCorreo);
         final Button btnStreetView = findViewById(R.id.btnStreetView);
-
         btnMandarMensaje.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
