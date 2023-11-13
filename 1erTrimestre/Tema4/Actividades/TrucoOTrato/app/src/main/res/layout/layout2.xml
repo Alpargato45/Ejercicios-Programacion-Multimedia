@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo2">
+
+    <TextView
+        android:id="@+id/txtFantasmas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="439dp"
+        android:text="Fantasmas"
+        android:textColor="#ffffff"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/txtCalabazas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="347dp"
+        android:text="Calabazas"
+        android:textColor="#ffffff"
+        android:textSize="35sp" />
+
+</RelativeLayout>
