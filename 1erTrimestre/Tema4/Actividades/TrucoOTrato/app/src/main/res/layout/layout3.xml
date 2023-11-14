@@ -8,13 +8,14 @@
     android:orientation="vertical"
     android:background="@drawable/fondo5">
 
-    <TextView
-        android:id="@+id/txtPreparate"
+    <Button
+        android:id="@+id/btnPreparate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Prepárate..."
         android:textColor="#ffffff"
         android:textSize="35sp"
+        android:background="#00000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
