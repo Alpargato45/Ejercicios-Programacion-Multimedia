@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         listado.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (parent != null) {
+                if (view != miCabecera) {
                     String seleccionado = ((Datos) parent.getItemAtPosition(position)).getTexto1();
                     Toast.makeText(MainActivity.this, "Has pulsado " + seleccionado, Toast.LENGTH_SHORT).show();
                 }
