@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         menu.add(Menu.NONE,menOp1,Menu.NONE,"Opcion A desde Java");
 
         SubMenu smenu = menu.addSubMenu(Menu.NONE,menOp2,Menu.NONE,"Opcion B desde Java");
-        smenu = menu.addSubMenu(Menu.NONE,menOp2_1,Menu.NONE,"Opcion 2.1 desde Java");
-        smenu = menu.addSubMenu(Menu.NONE,menOp2_2,Menu.NONE,"Opcion 2.2 desde Java");
+        smenu.addSubMenu(Menu.NONE,menOp2_1,Menu.NONE,"Opcion 2.1 desde Java");
+        smenu.addSubMenu(Menu.NONE,menOp2_2,Menu.NONE,"Opcion 2.2 desde Java");
 
         menu.add(Menu.NONE,menOp3,Menu.NONE,"Opcion C desde Java");
         return true;

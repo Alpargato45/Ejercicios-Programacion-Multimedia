@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class TerceraVentana extends AppCompatActivity {
+public class             TerceraVentana extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

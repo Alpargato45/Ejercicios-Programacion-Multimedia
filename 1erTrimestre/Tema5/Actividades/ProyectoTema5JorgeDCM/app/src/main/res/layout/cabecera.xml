@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Animales Vertebrados: \n Mamíferos"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:background="#228F52"/>
+
+</RelativeLayout>
