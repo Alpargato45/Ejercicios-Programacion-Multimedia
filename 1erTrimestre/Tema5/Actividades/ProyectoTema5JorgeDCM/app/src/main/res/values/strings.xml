@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProyectoTema5JorgeDCM</string>
+    <string name="textoBotonInicioSesion"> Iniciar Sesión </string>
+    <string name="textoBotonRegistrarse">Registrarse</string>
+    <string name="textoBotonSalir"> Salir </string>
+    <string name="textoBotonAbrirSinSesion">Abrir Sin Sesión</string>
+</resources>
