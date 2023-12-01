@@ -13,6 +13,15 @@
         android:theme="@style/Theme.ProyectoTema5JorgeDCM"
         tools:targetApi="31">
         <activity
+            android:name=".Animales.Aves"
+            android:exported="false" />
+        <activity
+            android:name=".menuBase"
+            android:exported="false" />
+        <activity
+            android:name=".Animales.Mamiferos"
+            android:exported="false" />
+        <activity
             android:name=".activityInicio"
             android:exported="false" />
         <activity

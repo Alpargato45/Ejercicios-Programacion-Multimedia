@@ -2,15 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/mnOpVertebrados" android:title="Vertebrados">
         <menu>
-            <item android:id="@+id/mnOpMamiferos" android:title="Mamíferos"/>
+            <item android:id="@+id/mnOpMamiferos" android:title="Mamiferos"/>
             <item android:id="@+id/mnOpAves" android:title="Aves"/>
-            <item android:id="@+id/mnOpPeces" android:title="Peces"/>
         </menu>
     </item>
     <item android:id="@+id/mnOpInvertebrados" android:title="Invertebrados">
         <menu>
             <item android:id="@+id/mnOpArtropodos" android:title="Artrópodos"/>
-            <item android:id="@+id/mnOpMoluscos" android:title="Moluscos"/>
         </menu>
     </item>
 </menu>

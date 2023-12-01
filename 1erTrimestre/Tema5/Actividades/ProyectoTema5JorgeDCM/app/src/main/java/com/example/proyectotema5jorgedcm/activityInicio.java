@@ -4,11 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class activityInicio extends AppCompatActivity {
+public class activityInicio extends menuBase {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,13 +23,13 @@ public class activityInicio extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_inicio,menu);
-        return true;
+        // Puedes personalizar el menú aquí si es necesario
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int opcion = item.getItemId();
+        // Puedes personalizar el manejo de ítems de menú aquí si es necesario
         return super.onOptionsItemSelected(item);
     }
 }

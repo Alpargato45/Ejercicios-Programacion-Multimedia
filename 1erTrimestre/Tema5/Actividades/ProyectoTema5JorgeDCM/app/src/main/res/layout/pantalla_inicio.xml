@@ -19,4 +19,11 @@
         android:layout_marginTop="5dp"
         android:src="@drawable/arbol_reino_animal"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mis animales favoritos son los leopardos y los zorros, ¡prueba a pulsar en su imagen!"
+        android:textStyle="italic"
+        android:textSize="20sp"/>
+
 </LinearLayout>
