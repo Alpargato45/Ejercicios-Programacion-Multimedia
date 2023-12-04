@@ -33,14 +33,14 @@
         android:visibility="invisible"/>
 
     <Button
-        android:id="@+id/btnAbrirSinSesion"
+        android:id="@+id/btnAbrirAplicacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#1AAA69"
-        android:text="@string/textoBotonAbrirSinSesion"
+        android:text="@string/textoBotonAbrirApp"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnInicioSesion"
+        app:layout_constraintBottom_toTopOf="@+id/btnNational"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,11 +49,11 @@
         android:visibility="invisible"/>
 
     <Button
-        android:id="@+id/btnInicioSesion"
+        android:id="@+id/btnNational"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#1AAA69"
-        android:text="@string/textoBotonInicioSesion"
+        android:text="@string/textoBotonNational"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,17 +65,17 @@
         android:visibility="invisible"/>
 
     <Button
-        android:id="@+id/btnRegistrarse"
+        android:id="@+id/btnCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#1AAA69"
-        android:text="@string/textoBotonRegistrarse"
+        android:text="@string/textoBotonCorreo"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnInicioSesion"
+        app:layout_constraintTop_toBottomOf="@+id/btnNational"
         app:layout_constraintVertical_bias="0.118"
         android:visibility="invisible"/>
 
@@ -91,7 +91,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarse"
+        app:layout_constraintTop_toBottomOf="@+id/btnCorreo"
         app:layout_constraintVertical_bias="0.205"
         android:visibility="invisible"/>
 

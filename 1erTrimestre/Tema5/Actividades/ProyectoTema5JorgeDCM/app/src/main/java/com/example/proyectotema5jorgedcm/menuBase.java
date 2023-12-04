@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.proyectotema5jorgedcm.Animales.Artropodo;
 import com.example.proyectotema5jorgedcm.Animales.Aves;
 import com.example.proyectotema5jorgedcm.Animales.Mamiferos;
 
@@ -35,6 +36,9 @@ public abstract class menuBase extends AppCompatActivity {
             return true;
         } else if (itemId == R.id.mnOpAves) {
             cambioPantalla = new Intent(this, Aves.class);
+            startActivity(cambioPantalla);
+        } else if (itemId == R.id.mnOpArtropodos) {
+            cambioPantalla = new Intent(this, Artropodo.class);
             startActivity(cambioPantalla);
         }
         return super.onOptionsItemSelected(item);
