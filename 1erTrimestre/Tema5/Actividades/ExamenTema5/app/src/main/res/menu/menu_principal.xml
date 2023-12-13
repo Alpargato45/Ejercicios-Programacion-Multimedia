@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/intent" android:title="Intents">
+    <menu>
+        <item android:id="@+id/MnOpExplicito" android:title="Intent explícitos"/>
+        <item android:id="@+id/MnOpImplicito" android:title="Intent implícitos"/>
+    </menu>
+</item>
+    <item android:id="@+id/listado" android:title="Listados">
+        <menu>
+            <item android:id="@+id/MnOpListView" android:title="ListView"/>
+            <item android:id="@+id/MnOpgridView" android:title="GridView"/>
+            <item android:id="@+id/MnOpSpinner" android:title="Spinner"/>
+        </menu>
+    </item>
+</menu>

@@ -1,7 +1,6 @@
 package com.example.proyectotema5jorgedcm.Animales;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,9 +14,9 @@ import androidx.appcompat.widget.Toolbar;
 import com.example.proyectotema5jorgedcm.Adaptador.Adaptador;
 import com.example.proyectotema5jorgedcm.Adaptador.Datos;
 import com.example.proyectotema5jorgedcm.R;
-import com.example.proyectotema5jorgedcm.menuBase;
+import com.example.proyectotema5jorgedcm.Herencias.MenuBase;
 
-public class Aves extends menuBase {
+public class Aves extends MenuBase {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

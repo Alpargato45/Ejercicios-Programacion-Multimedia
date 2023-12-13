@@ -1,10 +1,8 @@
 package com.example.proyectotema5jorgedcm;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -12,9 +10,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-public class activityInicio extends menuBase {
+import com.example.proyectotema5jorgedcm.Herencias.MenuBase;
+
+public class activityInicio extends MenuBase {
 
     private ImageView imagen;
 
@@ -32,13 +31,11 @@ public class activityInicio extends menuBase {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Puedes personalizar el menú aquí si es necesario
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        // Puedes personalizar el manejo de ítems de menú aquí si es necesario
         return super.onOptionsItemSelected(item);
     }
 

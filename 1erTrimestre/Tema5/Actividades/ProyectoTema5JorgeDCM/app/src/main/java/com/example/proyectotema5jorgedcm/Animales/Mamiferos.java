@@ -1,7 +1,6 @@
 package com.example.proyectotema5jorgedcm.Animales;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
@@ -11,24 +10,24 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.proyectotema5jorgedcm.Adaptador.Adaptador;
 import com.example.proyectotema5jorgedcm.Adaptador.Datos;
+import com.example.proyectotema5jorgedcm.Herencias.MenuBase;
+import com.example.proyectotema5jorgedcm.Herencias.MenuContextualBase;
 import com.example.proyectotema5jorgedcm.R;
-import com.example.proyectotema5jorgedcm.menuBase;
 
-public class Mamiferos extends menuBase {
+public class Mamiferos extends MenuBase {
 
-
+    private ListView listaMamiferos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mamiferos);
 
-        final ListView listaMamiferos = findViewById(R.id.listViewMamiferos);
+        listaMamiferos = findViewById(R.id.listViewMamiferos);
         Toolbar toolbar = findViewById(R.id.toolbarMamiferos);
         setSupportActionBar(toolbar);
 
@@ -67,5 +66,40 @@ public class Mamiferos extends menuBase {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+
+        MenuInflater inflater = getMenuInflater();
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
+
+        menu.setHeaderTitle(listaMamiferos.getAdapter().getItem(info.position).toString().toUpperCase());
+
+        switch (info.position){
+            case 0:
+                inflater.inflate(R.menu.menu_listview,menu);
+                break;
+        }
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+
+        String texto;
+        int id = item.getItemId();
+
+        if(id == R.id.mnOpCambioColor) {
+            texto = item.getTitle().toString();
+            Toast.makeText(this, texto, Toast.LENGTH_SHORT).show();
+        }
+
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        int pulsado = info.position;
+        texto = listaMamiferos.getItemAtPosition(pulsado).toString();
+        Toast.makeText(this, texto, Toast.LENGTH_SHORT).show();
+
+        return super.onContextItemSelected(item);
     }
 }

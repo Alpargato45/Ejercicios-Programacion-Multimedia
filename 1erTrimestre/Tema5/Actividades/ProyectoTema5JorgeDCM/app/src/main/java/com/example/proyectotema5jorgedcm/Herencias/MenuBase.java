@@ -1,4 +1,4 @@
-package com.example.proyectotema5jorgedcm;
+package com.example.proyectotema5jorgedcm.Herencias;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,8 +12,9 @@ import android.view.MenuItem;
 import com.example.proyectotema5jorgedcm.Animales.Artropodo;
 import com.example.proyectotema5jorgedcm.Animales.Aves;
 import com.example.proyectotema5jorgedcm.Animales.Mamiferos;
+import com.example.proyectotema5jorgedcm.R;
 
-public abstract class menuBase extends AppCompatActivity {
+public abstract class MenuBase extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

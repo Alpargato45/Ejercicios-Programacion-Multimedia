@@ -1,7 +1,6 @@
 package com.example.proyectotema5jorgedcm.Animales;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
@@ -14,9 +13,9 @@ import android.widget.TextView;
 import com.example.proyectotema5jorgedcm.Adaptador.Adaptador;
 import com.example.proyectotema5jorgedcm.Adaptador.Datos;
 import com.example.proyectotema5jorgedcm.R;
-import com.example.proyectotema5jorgedcm.menuBase;
+import com.example.proyectotema5jorgedcm.Herencias.MenuBase;
 
-public class Artropodo extends menuBase {
+public class Artropodo extends MenuBase {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

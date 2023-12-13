@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 2:
                 inflater.inflate(R.menu.menu_contextual2,menu);
+                break;
         }
     }
 
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         String texto;
         int id = item.getItemId();
 
-        //Realizo una acción aprtiendo dele elemento del menú que he pulsado
+        //Realizo una acción partiendo del elemento del menú que he pulsado
         if(id == R.id.mn1Op1 || id == R.id.mn1Op2 || id == R.id.mn1Op3 || id == R.id.mn2Op1) {
             texto = item.getTitle().toString();
             Toast.makeText(this, texto, Toast.LENGTH_SHORT).show();
