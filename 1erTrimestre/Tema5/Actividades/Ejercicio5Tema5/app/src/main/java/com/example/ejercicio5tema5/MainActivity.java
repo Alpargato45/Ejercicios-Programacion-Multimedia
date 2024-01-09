@@ -20,16 +20,21 @@ public class MainActivity extends AppCompatActivity {
         final Spinner listaOpciones = findViewById(R.id.spinnerPeliculas);
         final TextView txtPelis = findViewById(R.id.txtPelicula);
 
-        final String[] peliculas = {"Stranger Things","Cobra Kai", "A Korean Odyssey","Navidad en casa","Alquimia de almas","Desaparecido","Los Brigerton","Winx","Chernobyl"};
+        final String[] peliculas = {"Stranger Things", "Cobra Kai", "A Korean Odyssey", "Navidad en casa", "Alquimia de almas", "Desaparecido", "Los Brigerton", "Winx", "Chernobyl"};
 
-        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,peliculas);
+        ArrayAdapter<String> adaptador = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, peliculas);
         listaOpciones.setAdapter(adaptador);
 
-        listaOpciones.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listaOpciones.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String salida = parent.getItemAtPosition(position).toString();
                 txtPelis.setText(salida);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
             }
         });
     }

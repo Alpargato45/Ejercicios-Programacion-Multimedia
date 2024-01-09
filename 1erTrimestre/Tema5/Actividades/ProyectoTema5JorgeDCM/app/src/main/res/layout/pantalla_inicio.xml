@@ -23,8 +23,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mis animales favoritos son los leopardos y los zorros, ¡prueba a pulsar en esta imagen a ver que pasa!"
+        android:text="Curiosidades"
         android:textStyle="italic"
         android:textSize="20sp"/>
+
+    <ListView
+        android:id="@+id/ListViewTextos"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

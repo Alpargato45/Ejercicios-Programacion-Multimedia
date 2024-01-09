@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ListView
+        android:id="@+id/miLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/texto3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="PULSA UNA OPCIÓN"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="#FA0505"
+            android:textSize="25sp"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+</RelativeLayout>
