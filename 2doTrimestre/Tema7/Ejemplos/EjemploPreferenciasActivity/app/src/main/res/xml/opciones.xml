@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Categoria 1">
+
+        <CheckBoxPreference
+            android:key="opcion1"
+            android:title="Preferencia 1"
+            android:summary="Descripción de la preferencia"/>
+
+        <EditTextPreference
+            android:key="opcion2"
+            android:title="Preferencia 2"
+            android:summary="Descripción de la preferencia"
+            android:dialogTitle="Introduce Valor: "/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Categoria 2">
+
+        <ListPreference
+            android:key="opcion3"
+            android:title="Preferencia 3"
+            android:summary="Descripción de la preferencia"
+            android:dialogTitle="Indicar País"
+            android:entries="@array/pais"
+            android:entryValues="@array/codigoPais"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
