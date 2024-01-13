@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="SONIDO Y VIBRACIÓN">
+
+        <RingtonePreference
+            android:key="tonoAlarma"
+            android:title="Tono de alarma"
+            android:defaultValue="content://settings/system/ringtone"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="MODO SILENCIO">
+
+        <SwitchPreference
+            android:key="modoSilencio"
+            android:title="Modo Silencio"
+            android:summary="Silenciar llamadas entrantes y notificaciones"
+            android:defaultValue="false"/>
+
+        <SwitchPreference
+            android:key="silenciarMultimedia"
+            android:title="Silenciar Multimedia en el Modo Silencio"
+            android:summary="Juegos, música, videos y otras aplicaciones"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="NO MOLESTAR">
+
+        <SwitchPreference
+            android:key="noMolestar"
+            android:title="No molestar"
+            android:summary="No habrá recordatorios de llamadas entrantes ni notificaciones"
+            android:defaultValue="false"/>
+
+        <SwitchPreference
+            android:key="programarHora"
+            android:title="Programar hora de activación"
+            android:defaultValue="false"/>
+
+        <EditTextPreference
+            android:key="horaIniciar"
+            android:title="Iniciar"
+            android:dialogTitle="Introduce Hora de Inicio"
+            android:enabled="false"/>
+
+        <EditTextPreference
+            android:key="horaFinalizar"
+            android:title="Finalizar"
+            android:dialogTitle="Introduce Hora de Finalización"
+            android:enabled="false"/>
+
+        <ListPreference
+            android:key="horaRepetir"
+            android:title="Repetir"
+            android:dialogTitle="Repetir"
+            android:entries="@array/dias"
+            android:entryValues="@array/codigoDias"
+            android:enabled="false"/>
+
+        <SwitchPreference
+            android:key="dispositivoBloqueado"
+            android:title="Cuando el dispositivo esté bloqueado"
+            android:defaultValue="false"/>
+
+        <EditTextPreference
+            android:key="notificarLlamadas"
+            android:title="Notificar acerca de las llamadas"/>
+
+        <SwitchPreference
+            android:key="notificarLlamadasRepetidas"
+            android:title="Notificar llamadas repetidas"
+            android:summary="Sonar o vibrar mientras recibes la segunda llamada del mismo contacto en 15 minutos"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="VIBRAR">
+
+        <SwitchPreference
+            android:key="vibrarLlamadas"
+            android:title="Vibrar en llamadas"
+            android:defaultValue="false"/>
+
+        <SwitchPreference
+            android:key="vibrarSilencio"
+            android:title="Vibrar en modo silencio"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="RESPUESTA TÁCTIL">
+
+        <SwitchPreference
+            android:key="respuestaTactil"
+            android:title="Respuesta táctil"
+            android:summary="Recibe respuesta táctil con gestos y controles del sistema"
+            android:defaultValue="false"/>
+
+        <Preference
+            android:key="ajustesAdicionales"
+            android:title="Ajustes Adicionales"/>
+
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
