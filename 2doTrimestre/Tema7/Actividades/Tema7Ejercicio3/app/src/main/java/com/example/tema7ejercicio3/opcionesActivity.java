@@ -37,6 +37,5 @@ public class opcionesActivity extends PreferenceActivity {
         };
         findPreference("ajustesAdicionales").setOnPreferenceClickListener(listener);
         findPreference("programarHora").setOnPreferenceClickListener(listener);
-
     }
 }
