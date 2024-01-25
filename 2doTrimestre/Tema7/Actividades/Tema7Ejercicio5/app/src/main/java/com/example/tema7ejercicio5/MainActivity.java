@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         File ruta_sd = Environment.getExternalStorageDirectory();
                         File f = new File(ruta_sd.getAbsolutePath(), "prueba_sd.txt");
-                        
+
                         OutputStreamWriter fout = new OutputStreamWriter(new FileOutputStream(f));
                         fout.write(editText.getText().toString());
                         fout.close();
