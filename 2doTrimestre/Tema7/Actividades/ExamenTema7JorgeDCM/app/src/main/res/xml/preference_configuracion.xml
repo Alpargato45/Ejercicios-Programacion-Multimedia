@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Reproducción de video">
+
+        <ListPreference
+            android:key="opcionLista"
+            android:title="Uso de datos Móviles"
+            android:dialogTitle="Uso de datos Móviles"
+            android:entries="@array/datos"
+            android:entryValues="@array/codigoDatos"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Notificaciones">
+
+        <SwitchPreference
+            android:key="switchNotificaciones"
+            android:title="Permitir notificaciones"
+            android:summary="Personalizar en Ajustes -> Notificaciones"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Descargas">
+
+        <Preference
+            android:key="preferenceAutoDescargas"
+            android:title="Autodescargas">
+
+            //Aqui iria lo de abajo pero no me acuerdo de la forma que explicaste
+        </Preference>
+
+        <SwitchPreference
+            android:key="descargas"
+            android:title="Descargas para ti"/>
+
+        <CheckBoxPreference
+            android:summary="Te descargaremos una selección de series y películas para que siempre tengas algo que ver"
+            android:dependency="descargas"/>
+
+        <EditTextPreference
+            android:key="asignar"
+            android:title="Asignar Almacenamiento"
+            android:summary="¿Cuánto espacio quieres asignar? Indica la cantidad"
+            android:dialogTitle="Indica la cantidad de espacio asignado"
+            android:dependency="descargas"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Código"/>
+
+        <EditText
+            android:id="@+id/etCodigo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"/>
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnInsertar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insertar"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cons"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
