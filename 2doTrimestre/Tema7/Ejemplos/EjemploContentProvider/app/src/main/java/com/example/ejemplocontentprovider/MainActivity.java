@@ -3,6 +3,7 @@ package com.example.ejemplocontentprovider;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentResolver;
+import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -73,6 +74,33 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        //Inserto datos con el content resolver
+        btnInsertar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                ContentValues registro = new ContentValues();
+                registro.put(ClientesProvider.Clientes.COL_NOMBRE, "Cliente nuevo");
+                registro.put(ClientesProvider.Clientes.COL_TELEFONO, "999111222");
+                registro.put(ClientesProvider.Clientes.COL_EMAIL, "nuevo@gmail.com");
+
+                ContentResolver cr = getContentResolver();
+                cr.insert(ClientesProvider.CONTENT_URI, registro);
+            }
+        });
+
+        //Borro datos del content provider con el content resolver
+
+        btnBorrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ContentResolver cr = getContentResolver();
+                cr.delete(ClientesProvider.CONTENT_URI, ClientesProvider.Clientes.COL_NOMBRE + "= 'Cliente nuevo'", null);
+            }
+        });
+
+
 
     }
 }
