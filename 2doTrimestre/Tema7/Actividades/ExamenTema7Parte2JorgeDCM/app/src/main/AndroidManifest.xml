@@ -21,6 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:authorities="com.example.examentema7parte2jorgedcm"
+            android:name=".ManejoDatos.ContactosProvider"/>
     </application>
-
 </manifest>

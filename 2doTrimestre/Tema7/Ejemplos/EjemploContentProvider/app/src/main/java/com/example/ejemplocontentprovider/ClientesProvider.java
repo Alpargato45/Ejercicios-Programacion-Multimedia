@@ -82,7 +82,7 @@ public class ClientesProvider extends ContentProvider {
             case CLIENTES:
                 return "vmd.android.cursor.dir/vmd.com.example.Clientes";
             case CLIENTES_ID:
-                return "vmd.android.cursor.item/vmd.com.xample.Clientes";
+                return "vmd.android.cursor.item/vmd.com.example.Clientes";
         }
         return null;
     }

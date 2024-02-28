@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Buscar Contactos"
+        android:layout_marginTop="10dp"
+        android:background="#A9B1AD"/>
+
+    <ImageView
+        android:id="@+id/imgAñadirPersona"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:src="@drawable/addcontact3"/>
+
+    <LinearLayout
+        android:id="@+id/layoutAñadirModificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/black"
+                android:text="Nombre"/>
+
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Avatar"/>
+
+            <Spinner
+                android:id="@+id/spinnerImagenes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/black"
+                android:text="Teléfono"/>
+
+            <EditText
+                android:id="@+id/editTextTelefono"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAñadir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="AÑADIR"/>
+
+            <Button
+                android:id="@+id/btnModificar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                android:text="MODIFICAR"/>
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCELAR"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewPersonajes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:longClickable="true"/>
+
+</LinearLayout>
